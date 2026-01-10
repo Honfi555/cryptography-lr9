@@ -1,0 +1,7 @@
+[project]
+name = "lr9"
+version = "0.1.0"
+description = "This repository contains an educational implementation of the Diffie-Hellman cipher, on Python3.12"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
