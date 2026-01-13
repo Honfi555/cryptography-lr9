@@ -151,10 +151,13 @@ def main() -> None:
 	with open("big_primes.txt", "w") as w_file:
 		for i in generator:
 			print(i)
-			w_file.write(f"{i}\n")
+			if i.bit_length() > 100:
+				w_file.write(f"{i}\n")
 
 	return None
 
 
 if __name__ == "__main__":
 	main()
+	# a = 956317513020534262615100203184617734758327
+	# print(a.bit_length())
